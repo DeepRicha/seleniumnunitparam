@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat(script: 'build', encoding: 'mvn compile', returnStatus: true)
+        bat(script: 'mvn compile', returnStatus: true)
       }
     }
   }
