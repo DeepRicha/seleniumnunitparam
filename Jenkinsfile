@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat(script: 'mvn compile', returnStatus: true)
+        bat(script: '"F:\\tools\\nuget.exe" restore SeleniumNUnitParam.sln', returnStatus: true)
       }
     }
   }
